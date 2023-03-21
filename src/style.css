@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&display=swap");
+
+:root {
+  --Gray-background: #23242f;
+  --Green-button: #149650;
+  --Li-background: #4a4b60;
+  --Input-tasks: #d9d9d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Gray-background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 234px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 44px;
+}
+
+h1 {
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+  font-size: 50px;
+  font-style: normal;
+}
+
+input {
+  width: 385px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--Input-tasks);
+  color: black;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+input::placeholder {
+}
+
+input:focus {
+  outline: none;
+}
+
+.Add-tasks {
+  background-color: rgba(0, 116, 53, 0.5);
+  width: 385px;
+  height: 50px;
+  margin-top: 19px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  cursor: pointer;
+  transition: border-color 0.5s, background-color 0.5s, color 0.5s;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400px;
+}
+
+.Add-tasks:hover {
+  background-color: #149650;
+  border-color: transparent;
+  color: #ffff;
+}
