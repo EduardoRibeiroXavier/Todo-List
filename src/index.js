@@ -10,8 +10,10 @@ function ValidadeIfNewTask(){
 
 function NewTask() {
   let input = document.getElementById("input-text");
+  input.style.border = ''
   // Validação do input
   if (!input.value) {
+    input.style.border = '1px solid red'
     alert("Digite algo para ser adicionado");
   }
   else if(ValidadeIfNewTask()) {
@@ -34,7 +36,7 @@ function showValues() {
   let list = document.getElementById("todo-list");
   list.innerHTML = ''
   for (let i = 0; i < values.length; i++) {
-    list.innerHTML += `<li>${values[i]["name"]}<button id='btn-ok' onclick = 'RemoveItem("${values[i]["name"]}")'>ok</button></li>`;
+    list.innerHTML += `<li>${values[i]["name"]}<button id='btn-ok' onclick = 'RemoveItem("${values[i]["name"]}")'><i class="bi bi-trash"></i></button></li>`;
   }
 }
 function RemoveItem(data) {

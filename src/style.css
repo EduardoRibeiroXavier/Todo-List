@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
 
 :root {
   --Gray-background: #23242f;
   --Green-button: #149650;
   --Li-background: #4a4b60;
   --Input-tasks: #d9d9d9;
+  --font-color-input: #ACACAC;
 }
 
 * {
@@ -47,6 +49,7 @@ input {
 }
 
 input::placeholder {
+  font-size: 20px;
 }
 
 input:focus {
@@ -88,10 +91,31 @@ input:focus {
 }
 
 .todo-list li {
+  background-color: var(--Li-background);
+  max-width: 385px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
   list-style: none;
+  align-items: center;
+  padding-left: 10px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-transform: capitalize;
+  border-radius: 10px;
+  color: var(--font-color-input);
 }
+
+#btn-ok {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+}
+
+#btn-ok i {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+
