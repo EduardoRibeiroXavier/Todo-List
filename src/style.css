@@ -74,3 +74,24 @@ input:focus {
   border-color: transparent;
   color: #ffff;
 }
+
+.container-body {
+  width: 385px; 
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+  margin-top: 46px;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: capitalize;
+}
